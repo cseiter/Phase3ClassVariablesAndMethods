@@ -143,3 +143,4 @@ artists rather than genres.
 - [`#tally`][tally docs]
 
 [tally docs]: https://ruby-doc.org/core-2.7.0/Enumerable.html#method-i-tally
+# Phase3ClassVariablesAndMethods
