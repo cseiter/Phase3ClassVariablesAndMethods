@@ -1,5 +1,6 @@
 class Song
-
+#array item count help
+#http://jerodsanto.net/2013/10/ruby-quick-tip-easily-count-occurrences-of-array-elements/
     attr_accessor :name,:artist,:genre
 
     @@count = 0
@@ -17,6 +18,15 @@ class Song
 
     def self.count
         @@count
+    end
+
+    def self.genres
+        @@genres.uniq
+    end
+
+    def self.genre_count
+        #found in comments of above post
+        @@genres.tally
     end
 
 
