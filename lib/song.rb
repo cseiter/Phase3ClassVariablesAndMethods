@@ -24,6 +24,10 @@ class Song
         @@genres.uniq
     end
 
+    def self.artists
+        @@artists.uniq
+    end
+
     def self.genre_count
         #found in comments of above post
         @@genres.tally
