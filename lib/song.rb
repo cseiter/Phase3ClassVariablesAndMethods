@@ -10,10 +10,10 @@ class Song
     def initialize(name,artist,genre)
         @name=name
         @artist=artist
-        @@artists<<artist
+        @@artists << artist
         @genre=genre
-        @@genres<<genre
-        @@count+=1
+        @@genres << genre
+        @@count += 1
     end
 
     def self.count
@@ -29,9 +29,7 @@ class Song
     end
 
     def self.genre_count
-        #found in comments of above post
-        @@genres.tally
+        @@genres.each_with_object(Hash.new(0)) {|genre,counts| counts[genre] += 1}
     end
-
 
 end
